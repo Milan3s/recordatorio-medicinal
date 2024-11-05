@@ -45,7 +45,7 @@ Sigue estos pasos para instalar y configurar el proyecto:
     mysql -u usuario -p recordatorio_medicinal < database/recordatorio_medicinal.sql
     ```
 
-5. Configura tu archivo de conexión a la base de datos en el proyecto. Si usas variables de entorno, configura el archivo `.env` con los datos correctos:
+5. Configura tu archivo `.env` para la conexión a la base de datos:
 
     ```bash
     DB_HOST=localhost
@@ -54,7 +54,7 @@ Sigue estos pasos para instalar y configurar el proyecto:
     DB_PASSWORD=tu_contraseña
     ```
 
-6. Inicia el servidor con el siguiente comando desde el directorio raíz del proyecto:
+6. Inicia el servidor:
 
     ```bash
     php -S localhost:8000
@@ -64,20 +64,9 @@ Sigue estos pasos para instalar y configurar el proyecto:
 
 ## Tecnologías utilizadas
 
-- **PHP**: Para la lógica del backend y gestión de operaciones.
-- **HTML**: Para la estructura de las páginas web.
-- **CSS**: Para el diseño y estilo de las páginas.
-- **PDO (PHP Data Objects)**: Para la interacción con la base de datos MySQL de forma segura.
-- **POO (Programación Orientada a Objetos)**: Para estructurar el código de manera modular y reutilizable.
-- **MVC (Modelo-Vista-Controlador)**: Patrón de arquitectura para separar la lógica de la aplicación en componentes distintos y facilitar el mantenimiento.
-
----
-
-## Tags
-
 - ![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat&logo=php&logoColor=fff) **PHP**
 - ![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat&logo=html5&logoColor=fff) **HTML**
 - ![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat&logo=css3&logoColor=fff) **CSS**
-- ![PDO](https://img.shields.io/badge/-PDO-003B57?style=flat&logo=php&logoColor=fff) **PDO**
+- ![PDO](https://img.shields.io/badge/-PDO-003B57?style=flat&logo=php&logoColor=fff) **PDO (PHP Data Objects)**
 - **POO (Programación Orientada a Objetos)**
 - **MVC (Modelo-Vista-Controlador)**
