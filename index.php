@@ -108,7 +108,7 @@ unset($_SESSION['logout_message']);
 <body class="d-flex flex-column min-vh-100">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/logo.png" alt="Logo"> Recordatorio Medicinal
@@ -142,14 +142,14 @@ unset($_SESSION['logout_message']);
 
         <div class="row justify-content-center">
             <!-- Card de Iniciar sesión -->
-            <div class="col-auto">
+            <div class="col-auto my-2">
                 <a href="Vista/Login.php" class="card text-center">
                     <i class="bi bi-box-arrow-in-right icon-medicamentos"></i>
                     <h5>Acceder con tus datos</h5>
                 </a>
             </div>
             <!-- Card de Registrar usuario -->
-            <div class="col-auto">
+            <div class="col-auto my-2">
                 <a href="Vista/Registro.php" class="card text-center">
                     <i class="bi bi-person-plus icon-registro"></i>
                     <h5>Registra tus datos</h5>
