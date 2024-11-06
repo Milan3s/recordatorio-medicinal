@@ -18,52 +18,58 @@ Para poder ejecutar este proyecto, necesitarás tener instalado lo siguiente:
 - **PHP** 7.4 o superior
 - **MySQL** 5.7 o superior
 - **Apache** o **Nginx** como servidor web
-- **Composer** para gestionar las dependencias de PHP
+- **XAMPP** o phpmyadmin
 
-## Instalación
 
-Sigue estos pasos para instalar y configurar el proyecto:
+## Instalación del proyecto "recordatorio-medicinal"
 
-1. Clona este repositorio:
+Sigue estos pasos para instalar y configurar el proyecto en XAMPP:
+
+1. **Clona este repositorio:**
+
+    Si tienes **Git** instalado, clona el repositorio en tu máquina local con el siguiente comando:
 
     ```bash
     git clone https://github.com/Milan3s/recordatorio-medicinal.git
     ```
 
-2. Instala las dependencias de PHP con Composer:
+    Si no tienes **Git** instalado, puedes descargar el proyecto como un archivo ZIP desde GitHub, descomprimirlo y mover la carpeta a `htdocs` en el directorio de instalación de XAMPP.
 
-    ```bash
-    composer install
-    ```
+2. **Mover el proyecto a la carpeta `htdocs`:**
 
-3. Crea una base de datos en MySQL:
+    Copia la carpeta `recordatorio-medicinal` en el directorio `htdocs` de XAMPP, que generalmente se encuentra en:
+
+    - **Windows:** `C:/xampp/htdocs/`
+    - **Mac:** `/Applications/XAMPP/htdocs/`
+
+3. **Acceder a PHPMyAdmin y crear la base de datos:**
+
+    Abre **PHPMyAdmin** en tu navegador (`http://localhost/phpmyadmin/`) y crea una base de datos llamada `recordatorio_medicinal`.
 
     ```sql
-    CREATE DATABASE gestion_incidencias;
+    CREATE DATABASE recordatorio_medicinal;
     ```
 
-4. Importa el archivo SQL que se encuentra en la carpeta `database` para configurar las tablas necesarias:
+4. **Importar las tablas necesarias:**
 
-    ```bash
-    mysql -u usuario -p gestion_incidencias < database/gestion_incidencias.sql
+    Desde **PHPMyAdmin**, selecciona la base de datos `recordatorio_medicinal` y luego importa el archivo `.sql` que se encuentra en la carpeta `database` del proyecto. Si no encuentras esta carpeta, es posible que necesites crear las tablas manualmente o obtener el archivo SQL del repositorio.
+
+5. **Configurar la conexión a la base de datos:**
+
+    Edita el archivo de configuración para la conexión a la base de datos. Este archivo puede estar ubicado en `config/config.php` o similar. Asegúrate de configurar los valores correctos de conexión a la base de datos, por ejemplo:
+
+    ```php
+    define('DB_HOST', 'localhost');
+    define('DB_DATABASE', 'recordatorio_medicinal');
+    define('DB_USERNAME', 'tu_usuario');
+    define('DB_PASSWORD', 'tu_contraseña');
     ```
 
-5. Configura tu archivo `.env` para la conexión a la base de datos:
+6. **Iniciar el servidor:**
 
-    ```bash
-    DB_HOST=localhost
-    DB_DATABASE=gestion_incidencias
-    DB_USERNAME=tu_usuario
-    DB_PASSWORD=tu_contraseña
-    ```
+    Inicia el servidor de XAMPP y abre el navegador en `http://localhost/recordatorio-medicinal/` para acceder al proyecto.
 
-6. Inicia el servidor:
-
-    ```bash
-    php -S localhost:8000
-    ```
-
-7. Accede al proyecto en tu navegador en `http://localhost:8000`.
+¡Listo! Ya puedes comenzar a utilizar el sistema de recordatorios medicinales.
 
 ## Uso
 
