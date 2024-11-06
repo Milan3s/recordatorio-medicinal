@@ -1,0 +1,59 @@
+/* Asegura que el body ocupe toda la pantalla */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Contenido principal */
+.content {
+    flex: 1;
+}
+
+/* Footer pegado al fondo */
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-top: 127px;
+    margin-bottom: 96px;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.pricing-table {
+    margin: 50px 0;
+}
+
+.compare-table th,
+.compare-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+i.bi.bi-box-arrow-in-right.custom-icon-iniciar {
+    font-size: 48px;
+}
+
+i.bi.bi-person-plus.custom-icon-registro {
+    font-size: 48px;
+}
+

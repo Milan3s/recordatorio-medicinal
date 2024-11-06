@@ -1,0 +1,48 @@
+ 
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.card-container .card {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none; /* Sin subrayado en el texto */
+    color: #333; /* Color del texto */
+}
+
+.card-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Evitar subrayado en el hover */
+    color: #333; /* Mantener el color en el hover */
+}
+
+.card i {
+    font-size: 40px;
+    color: #007bff; /* Color azul */
+    margin-bottom: 10px;
+}
+
+.card .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
