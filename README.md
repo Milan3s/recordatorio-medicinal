@@ -71,6 +71,8 @@ Sigue estos pasos para instalar y configurar el proyecto en XAMPP:
 
 ¡Listo! Ya puedes comenzar a utilizar el sistema de recordatorios medicinales.
 
+¡Listo! Ya puedes comenzar a utilizar el sistema de recordatorios medicinales.
+
 ## Uso
 
 1. **Registro de usuario: Para comenzar a utilizar el sistema, debes registrarte como usuario. Puedes hacerlo desde la página de registro disponible en la raíz del proyecto.
