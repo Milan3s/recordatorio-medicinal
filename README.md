@@ -17,9 +17,7 @@ Para poder ejecutar este proyecto, necesitarás tener instalado lo siguiente:
 
 - **PHP** 7.4 o superior
 - **MySQL** 5.7 o superior
-- **Apache** o **Nginx** como servidor web
-- **XAMPP** o phpmyadmin
-
+- **Apache** o **Nginx** o **XAMPP** como servidor web
 
 ## Instalación del proyecto "recordatorio-medicinal"
 
